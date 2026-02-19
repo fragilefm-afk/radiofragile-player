@@ -1,0 +1,59 @@
+<div class="radio-player-main">
+  <!-- Header -->
+  <div class="player-header">
+    <div class="station-brand">
+      <div class="station-logo">
+        <img src="images/5-RF-MOTION-BLK.gif" alt="RF" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="station-info">
+        <h2>radiofragile</h2>
+        <p>TRANSMITTING THE FUTURE • EXPERIMENTAL MEDIA ARCHIVE</p>
+      </div>
+    </div>
+    <div class="live-badge">
+      <div class="live-dot"></div>
+      <div class="live-text">ON AIR</div>
+    </div>
+  </div>
+
+  <!-- Player -->
+  <div class="main-player">
+    <div class="now-playing-info">
+      <div class="track-details">
+        <div class="track-title" id="current-track">Select a Channel</div>
+        <div class="track-artist" id="current-artist">Click any image in playlist</div>
+      </div>
+      <div class="track-time">
+        <span id="current-time">0:00</span> / <span id="total-time">0:00</span>
+      </div>
+    </div>
+
+    <div class="player-controls-container">
+      <div class="player-controls">
+        <button class="player-btn" id="prev-btn"><i class="fas fa-step-backward"></i></button>
+        <button class="player-btn play-btn" id="play-btn"><i class="fas fa-play"></i></button>
+        <button class="player-btn" id="next-btn"><i class="fas fa-step-forward"></i></button>
+      </div>
+      <div class="volume-control-right">
+        <span><i class="fas fa-volume-up"></i></span>
+        <input type="range" class="volume-slider-right" id="volume-slider" min="0" max="100" value="80">
+      </div>
+    </div>
+
+    <!-- Wave Container for ASCII Spectrum -->
+    <div class="wave-container"></div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="time-display">
+        <span id="elapsed-time">0:00</span>
+        <span id="remaining-time">-0:00</span>
+      </div>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio-element" preload="metadata" style="display: none;"></audio>
+  </div>
+</div>
